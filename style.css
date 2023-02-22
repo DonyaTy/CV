@@ -1,0 +1,663 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 80px;
+    background-color: #43713db3;
+    flex-grow: 5;
+}
+
+.headerbackground {
+    background-color: #9bb4b003;
+}
+
+#name {
+    font-size: 50px;
+    color: white;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    align-content: center;
+    padding-left: 40px;
+    text-decoration: none;
+    text-underline-offset: none;
+}
+
+.divcontainer {
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    flex-direction: row;
+    flex-grow: 6;
+    display: flex;
+    min-height: 80px;
+    background-color: #9bb4b003;
+    color: white;
+    justify-content: flex-end;
+}
+
+.menu {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+#h1 {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 1.5em; 
+    letter-spacing: 2px;
+    color: #9aa1a0f7;
+    display: flex;
+    flex-grow: 6;
+    margin-bottom: 30px;
+    gap: 10px; 
+    justify-content: center; 
+}
+
+.valkommen {
+    margin-left: 100px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 1em; 
+    letter-spacing: 2px;
+    color: #6e7372f7;
+    display: flex;
+    flex-grow: 6;
+    margin-bottom: 30px;
+    gap: 10px; 
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px; 
+}
+
+#indexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.paragraf {
+    width: 100%;
+    height: 80%;
+    padding-top: 25px;
+}
+.presentation {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    color: black;
+    line-height: 2;
+}
+
+.kontaktPresentation {
+    padding: 40px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    color: black;
+    line-height: 2;
+
+    object-fit: cover;
+    width: 400px;
+    height: 500px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 400px;
+    height: 500px;
+    max-height: 30em;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 40px;
+    flex-wrap: nowrap;
+    box-shadow: 10px 10px 20px #afa9a9;
+    
+}
+
+
+.positionimg {
+    display: flex;
+    justify-content: center;
+}
+
+
+.secondcontainer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #9aa1a0f7;
+    
+}
+
+.personligt, .kunskap {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    margin-left: 100px; 
+    margin-right: 100px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    color: black;
+    line-height: 2;
+
+}
+
+.personligt {
+    text-align: center;
+}
+
+.karriar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+
+    margin-right: 100px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    color: black;
+    line-height: 2;
+}
+
+#careerImg {
+    width: 500px;
+    height: 330px;
+}
+
+#thirdContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#indexBox {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #947f7fa1;
+    border: 4px solid #9aa1a0f7;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+    padding: 50px;
+    box-shadow: 10px 10px 20px #aaaaaa;
+}
+
+.container {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+
+.portfolj {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5%;
+    margin-left: 100px; 
+    letter-spacing: 2px;
+    color: black;
+    text-transform: capitalize;
+
+}
+
+.wavesImg {
+    width: 100%;
+    height: 400px;
+}
+
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(187, 184, 184);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: white;
+  }
+  
+  input[type=submit] {
+    background-color: #667d7ab3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #947f7fa1;
+  }
+  
+  .formular {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+    margin: 50px;
+  }
+
+
+.footer {
+    display: flex;
+    height: 150px;
+    color: white;
+    flex-grow: 5;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    font-size: 50px;
+    gap: 40px; 
+    padding: 40px; 
+}
+
+
+.fa {  
+    font-size: 40px;
+    padding: 20px;   
+    margin: 5px 2px;  
+    border-radius: 40px; 
+  }  
+
+.fa:hover {
+    background-color: #3d4246;
+    opacity: 0.85;
+}
+   
+  .fa-twitter {  
+    background: #55ACEE;  
+    color: white; 
+    font-size: 40px;
+    border-radius: 40px; 
+  } 
+
+  .fa-linkedin {  
+    background: #007bb5;  
+    color: white;
+    border-radius: 40px;  
+    font-size: 40px;
+  }  
+  .fa-github {  
+    color: white; 
+    background-color: black; 
+    border-radius: 40px;
+    font-size: 80px;
+    
+  } 
+
+ 
+
+  .contactHeader {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 2em; 
+    letter-spacing: 2px;
+    color: #9aa1a0f7;
+    display: flex;
+    flex-grow: 6;
+    justify-content: center;
+  }
+
+
+  .contactDiv {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    height: 300px;
+    box-shadow: 0px 10px 5px #aaaaaa;
+    border-radius: 5px;
+  }
+
+  img {
+      height: 100px;
+  }
+
+  .contactIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 100px; 
+      
+  }
+
+  .adressContainer, .phoneContainer, .emailContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  
+  #projectImage {
+    display: flex;
+    justify-content: center;
+    
+    height: 100%; 
+  }
+  
+  #imgBox {
+    object-fit: cover;
+    height: 300px;
+    /* box-shadow: 10px 10px 20px #aaaaaa; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+    border-radius: 20px;
+    transition: all 0.2s ease-in;
+  }
+  
+  #imgBox:hover {
+  background-color: #3d4246;
+  opacity: 0.85; 
+  transform: scale(1.02);
+  
+  }
+
+.imgContainer {
+position: relative;
+text-align: center;
+color: white;
+padding-top: 70px;
+}
+
+.centered {
+font-family: 'Playfair Display', serif;
+position: absolute;
+display: flex;
+top: 89%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 11px;
+font-weight: bolder;
+color: #171515;
+background-color: #dbdbdbcc;
+border-radius: 20px;
+height: 30px;
+padding: 7px 12px;
+opacity: 0.80;
+justify-content: center;
+align-items: center;
+margin: 0px !important;
+}
+
+@media  screen and (max-width: 1095px) {
+    .footer {
+        width: 100%;
+        height: auto;
+    }
+    .icon {
+        width: 100%;
+        height: auto;
+    }
+    #name {
+        object-fit: contain;
+        width: auto;
+    }
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }   
+}
+
+
+@media  screen and (max-width: 980px) {
+    
+    #thirdContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media  screen and (max-width: 720px) {
+    #imgBox {
+        height: 250px;
+    }
+    
+    .projectsContainer {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}
+
+
+@media  screen and (max-width: 660px) {
+    .contactIcons {
+        gap: 50px; 
+    }
+    
+}
+
+@media screen and (max-width: 630px) {
+
+    #imgBox {
+        height: 350px;
+    }
+
+    .divcontainer {
+        display: flex;
+        width: auto; 
+        flex-wrap: wrap;
+        
+    }
+
+    #name {
+        display: none; 
+        height: 0;
+        margin-left: 0px;
+        flex-basis: 0%;
+    }
+
+    .menu {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    margin-top: 5px;
+
+    
+    }
+    
+    .photo {
+        position: static;
+        padding: 0; 
+    }
+
+    .paragraf {
+        padding: 10px;
+    }
+
+    .presentation {
+        margin: 15px; 
+        padding: 10px;
+    }
+    .main {
+        padding: 0; 
+    }
+    .div {
+        margin: 0; 
+    }
+    .divcontainer {
+        padding-left: 0; 
+    }
+    .valkommen {
+        width: 100%;
+        margin: 15px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding: 10px; 
+    }
+    .personligt {
+        margin-left: 60px; 
+        margin-right: 60px; 
+    }
+    .karriar {
+        margin: 0;
+        padding: 10px; 
+    }
+    .kunskap {
+        margin: 15px; 
+        padding: 10px;
+    }
+
+    .footer .icon {
+        width: auto;
+        justify-content: flex-end;
+    }
+
+    #h1 {
+        font-size: 25px;
+    }
+
+    #careerImg {
+        width: 400px;
+        height: 300px;
+    }
+
+    .fa-discord {
+        font-size: 51px;
+    }
+
+    .centered {
+        height: 60px; 
+    }
+    
+ }
+
+ @media screen and (max-width: 530px) {
+
+    img {
+        height: 60px;
+    }
+   
+    .contactIcons {
+        gap: 30px; 
+    }
+
+    .contactDiv {
+        height: 260px; 
+    }
+
+    .icon {
+        gap: 28px; 
+    }
+
+    .fa-discord {
+        font-size: 51px;
+    }
+
+    #imgBox {
+        height: 180px;
+    }
+
+ }
+
+
+ @media screen and (max-width: 450px) {
+
+    #imgBox {
+        height: 160px;
+    }
+
+    .icon {
+        font-size: 20px;
+        gap: 15px;
+    }
+
+    #h1 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    .photo {
+        width: 80%;
+    }
+
+    #careerImg {
+        width: 350px;
+        height: 250px;
+    }
+
+    .fa-discord {
+        font-size: 19px;
+    }
+
+ }
+
+ @media screen and (max-width: 350px) {
+
+    #imgBox {
+        height: 180px;
+    }
+
+    .icon {
+        font-size: 15px;
+        gap: 10px; 
+    }
+
+    #h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    #careerImg {
+        width: 250px;
+        height: 180px;
+    }
+
+
+ }
+ 
